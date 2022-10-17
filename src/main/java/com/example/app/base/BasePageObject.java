@@ -52,4 +52,12 @@ public class BasePageObject {
         AndroidElement elm = find(locator);
         elm.isDisplayed();
     }
+
+    public String getText(By locator){
+        return find(locator).getText();
+    }
+
+    public void clear(By locator){
+        find(locator).clear();
+    }
 }
