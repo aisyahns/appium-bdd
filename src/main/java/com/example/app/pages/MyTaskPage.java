@@ -37,6 +37,11 @@ public class MyTaskPage extends BasePageObject {
 //        AndroidElement addBtElm = find(addBtn);
 //        addBtElm.click();
         click(addBtn);
+
+        for (int i = 1; i < 5; i++){
+            scrollUp();
+        }
+        scrollAndClickBytext("Samsung PS5");
     }
 
     public void inputTaskTitle(String taskTitle){
